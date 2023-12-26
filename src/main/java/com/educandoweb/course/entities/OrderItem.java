@@ -63,6 +63,9 @@ public class OrderItem {
         this.price = price;
     }
 
+    public Double getSubTotal() {
+        return this.quantity * this.price;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
